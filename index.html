@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>PACICO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/5a6c44833b.js" crossorigin="anonymous"></script>
+    <script src="scroll.js"></script>
+</head>
+<body>
+<div class="container">
+  <section>
+    <div class="content" id="blank-slate">
+      <img src="pictures/logo/logos/PACICO_logo.png">
+      <h2>Welcome!</h2>
+      <p>To get started with your conversation with PACICO,<br>just click 
+        the icon located on the bottom<br>side of this page.</p>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '65e5bcf05671df3be500ddfb' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            assistant: {
+  	        title: "PACICO",
+  	        description: "PCC's very own assistant",
+  	        image: "pictures/logo/logos/PACICO_logo.png",
+  	        // color: "string",
+  	        stylesheet: "style.css" //link to your self-hosted stylesheet
+	        }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+
+</body>
+</html>
